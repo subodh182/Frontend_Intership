@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Button Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        figure {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        figcaption {
+            margin-top: 8px;
+            color: #777;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Personal Webpage</h1>
+    <h2>Exploring the World of Front-End Development</h2>
+
+    <p>
+        Hello! I'm currently learning front-end web development as part of my internship with Cognifyz Technologies.
+        This website serves as a demonstration of my understanding of essential HTML, CSS, and JavaScript concepts. 
+        I'm continuously improving it with interactive and responsive features.
+    </p>
+
+    <button onclick="changeBackgroundColor()">Click Me to Change Background</button>
+
+    <figure>
+        <img src="img.jpg" alt="Demo Image" />
+        <figcaption>A simple image for demonstration purposes.</figcaption>
+    </figure>
+
+    <script>
+        function changeBackgroundColor() {
+            const colors = ["#f0f8ff", "#d1f2eb", "#ffeaa7", "#f6d6d6", "#e6f7ff"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
